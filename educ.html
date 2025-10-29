@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mary Grace Integro — Education Background</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+    .container{
+      max-width:900px;
+      background-color: #70B2B2;
+      margin:0 auto;
+      background:rgba(255,255,255,0.1);
+      backdrop-filter:blur(10px);
+      border-radius:16px;
+      padding:30px;
+      box-shadow:0 8px 32px rgba(0,0,0,0.2);
+      padding: 10%;
+    }
+    h1{
+      text-align:center;
+      font-size:2em;
+      margin-bottom:20px;
+    }
+    .timeline{
+      position:relative;
+      margin:40px 0;
+      padding-left:30px;
+      border-left:3px solid #fff;
+    }
+    .timeline::before{
+      content:'';
+      position:absolute;
+      left:0;
+      top:0;
+      bottom:0;
+      width:3px;
+      background:#fff;
+    }
+    .edu-item{
+      position:relative;
+      margin-bottom:30px;
+      padding-left:20px;
+    }
+    .edu-item::before{
+      content:'';
+      position:absolute;
+      left:-9px;
+      top:5px;
+      width:15px;
+      height:15px;
+      border-radius:50%;
+      background:#fff;
+      border:3px solid #00d2ff;
+    }
+    .edu-item h2{
+      margin:0;
+      font-size:1.4em;
+    }
+    .edu-item p{
+      margin:5px 0;
+      font-size:0.95em;
+      color:#e0e0e0;
+    }
+    .nam {
+        font-size: 3rem;
+
+    }
+    .edu-item span{
+      display:inline-block;
+      background:#00d2ff;
+      color:#fff;
+      padding:4px 10px;
+      border-radius:12px;
+      font-size:0.85em;
+      margin-top:5px;
+    }
+    footer{
+      text-align:center;
+      font-size:0.85em;
+      color:#ddd;
+      margin-top:30px;
+    }
+  </style>
+</head>
+<body>
+    
+    <header class="header">
+        <a href="#home" class="logo">Mary Grace
+        <span>Integro</span></a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+        
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+
+            <a href="educ.html" class="active">Education</a>
+            <a href="album.html">Albums</a>
+           <a href="aboutme.html">About Me</a>
+        </nav>
+        <script src="script.js"></script>
+    </header>
+  <div class="container" style="background-color: #B7B89F;">
+    <h1 style="color: black; font-size:3rem;">Education Background</h1>
+    <div class="timeline">
+      <div class="edu-item">
+        <h2>Bachelor of Science in Industrial Technology</h2>
+        <p class="nam"><strong>Lapu-Lapu City College</strong> | 2023 – Present</p>
+        <span>Ongoing</span>
+      </div>
+      <div class="edu-item">
+        <h2>Senior High School — General Academic Strand (GAS)</h2>
+        <p class="nam"><strong>Babag National High School</strong> | 2020 – 2022</p>
+        <span>Graduated</span>
+      </div>
+      <div class="edu-item">
+        <h2>Junior High School</h2>
+        <p class="nam"><strong>Babag National High School</strong> | 2016 – 2020</p>
+        <span>Graduated</span>
+      </div>
+      <div class="edu-item">
+        <h2>Elementary Education</h2>
+        <p class="nam"><strong>Gun-ob Elementary School</strong> | 2010 – 2016</p>
+        <span>Completed</span>
+      </div>
+    </div>
+  </div>
+  <footer>
+    © <span id="year"></span> Mary Grace Integro — Education Background Page
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

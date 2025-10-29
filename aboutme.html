@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mary Grace Integro — About Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+    body{
+      margin:0;
+      font-family:'Poppins',sans-serif;
+      background:#80A1BA;
+      color:black;
+      padding:40px 20px;
+    }
+    .container{
+      max-width:900px;
+      margin:0 auto;
+      background:rgba(255,255,255,0.1);
+      backdrop-filter:blur(10px);
+      border-radius:16px;
+      padding:30px;
+      box-shadow:0 8px 32px rgba(0,0,0,0.2);
+    }
+    h1{
+      text-align:center;
+      font-size:2em;
+      margin-bottom:20px;
+    }
+    .about{
+      text-align:center;
+      margin-bottom:30px;
+    }
+    .about img{
+      width:150px;
+      height:150px;
+      border-radius:50%;
+      object-fit:cover;
+      border:4px solid #00d2ff;
+      margin-bottom:15px;
+    }
+    .about h2{
+      margin:0;
+      font-size:1.5em;
+    }
+    .about p{
+      font-size:1em;
+      color:black;
+      max-width:700px;
+      margin:10px auto;
+    }
+    .section{
+      margin-top:40px;
+    }
+    .section h3{
+      text-align:center;
+      font-size:1.4em;
+      margin-bottom:20px;
+    }
+    .chips{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      justify-content:center;
+    }
+    .chip{
+      padding:10px 15px;
+      background:rgba(255,255,255,0.15);
+      border-radius:20px;
+      border:1px solid rgba(255,255,255,0.2);
+      font-size:0.95em;
+      transition:0.3s;
+    }
+    .chip:hover{
+      background:pink;
+      color:white;
+    }
+    .family{
+      text-align:center;
+      color:BLACK;
+      max-width:700px;
+      margin:0 auto;
+      font-size:1em;
+      line-height:1.6;
+      background:rgba(255,255,255,0.1);
+      padding:20px;
+      border-radius:12px;
+    }
+    footer{
+      text-align:center;
+      font-size:0.85em;
+      color:#ddd;
+      margin-top:40px;
+    }
+  </style>
+</head>
+<body>
+      <header class="header">
+        <a href="#home" class="logo">Mary Grace
+        <span>Integro</span></a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+        
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+
+            <a href="educ.html" >Education</a>
+            <a href="album.html">Albums</a>
+           <a href="aboutme.html" class="active">About Me</a>
+        </nav>
+        <script src="script.js"></script>
+    </header>
+  <div class="container" style="background-color: #B7A3E3; padding:10%;">
+    <h1>About Me</h1>
+
+    <div class="about">
+      <img src="mary2.jfif" alt="Mary Grace Integro">
+      <h2>Mary Grace Integro</h2>
+      <p>Hi! I'm Mary Grace, a dedicated and a loving person. I am also passionate about technology, design, and storytelling. I enjoy learning new things, creating meaningful projects, and expressing myself through art and digital media. Welcome to my personal space! I also believe in a saying that <strong>"IF PLAN DOESN'T WORK, CHANGE THE PLAN BUT NEVER THE GOAL".</strong></p>
+    </div>
+
+    <div class="section">
+      <h3>My Favorites</h3>
+      <div class="chips">
+        <div class="chip">Flowers</div>
+        <div class="chip">Coding</div>
+        <div class="chip">Cats and Dogs</div>
+        <div class="chip">Blue</div>
+        <div class="chip">Music</div>
+        <div class="chip">Cleaning</div>
+        <div class="chip">Ice Cream</div>
+        <div class="chip">Movies</div>
+        <div class="chip">Foods</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>My Hobbies</h3>
+      <div class="chips">
+        <div class="chip">Dancing</div>
+        <div class="chip">Watching K-Dramas and Anime</div>
+        <div class="chip">Playing Online Games</div>
+        <div class="chip">Reading Stories</div>
+        <div class="chip">Exploring New Places</div>
+        <div class="chip">Singing</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>My Family Background</h3>
+      <div class="family">
+        <p>I come from a loving and supportive family that has always inspired me to do my best in everything I pursue. My parents have taught me the importance of education, kindness, and perseverance. We value togetherness and enjoy spending time with each other through simple family gatherings, meals, and shared laughter. Their guidance has helped shape who I am today — a person filled with determination, respect, and compassion for others.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    © <span id="year"></span> Mary Grace Integro — About Me Page
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

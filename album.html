@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Albums</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #80A1BA;
+      color: black;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1em;
+      color: #e0e0e0;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 30px;
+      border-bottom: 3px solid rgba(255,255,255,0.3);
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .item {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+
+
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    }
+
+    .item img, .item video {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .caption {
+      text-align: center;
+      padding: 15px;
+      font-size: 1em;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #ccc;
+      background: rgba(0, 0, 0, 0.2);
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      .item img, .item video {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+        <a href="#home" class="logo">Mary Grace
+        <span>Integro</span></a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+        
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+
+            <a href="educ.html" >Education</a>
+            <a href="album.html" class="active">Albums</a>
+           <a href="aboutme.html" >About Me</a>
+        </nav>
+        <script src="script.js"></script>
+    </header>
+ 
+  <!-- 🖼️ Photos Section -->
+  <section id="photos" style="padding: 10%;">
+    <h2>📸 Photo Gallery</h2>
+    <div class="gallery">
+      <div class="item">
+        <img src="mary.jfif" alt="Me and my friends">
+        
+      </div>
+
+      <div class="item">
+        <img src="mg2.jpg" alt="Vacation moment">
+        
+      </div>
+
+      <div class="item">
+        <img src="mg3.jpg" alt="Family time">
+       
+      </div>
+
+      <div class="item">
+        <img src="mary2.jfif" alt="Graduation Day">
+        
+      </div>
+
+        <div class="item">
+        <img src="mg5.jfif" alt="Graduation Day">
+        
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- 🎥 Videos Section -->
+  <section id="videos">
+    <h2>🎬 Video Gallery</h2>
+    <div class="gallery">
+      <div class="item">
+        <video controls>
+          <source src="mg1.mp4" type="video/mp4">
+        </video>
+        
+      </div>
+
+      <div class="item">
+        <video controls>
+          <source src="mg2.mp4" type="video/mp4">
+        </video>
+        
+      </div>
+
+      <div class="item">
+        <video controls>
+          <source src="mg3.mp4" type="video/mp4">
+        </video>
+       
+      </div>
+
+       <div class="item">
+        <video controls>
+          <source src="vid1.mp4" type="video/mp4">
+        </video>
+       
+      </div>
+       <div class="item">
+        <video controls>
+          <source src="vid2.mp4" type="video/mp4">
+        </video>
+       
+      </div>
+
+       <div class="item">
+        <video controls>
+          <source src="vid3.mp4" type="video/mp4">
+        </video>
+       
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Mary Grace Integro — My Albums Page
+  </footer>
+
+</body>
+</html>
